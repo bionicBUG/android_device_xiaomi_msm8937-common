@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
     libcurl
 
 PRODUCT_BOOT_JARS += \
-    com.qti.location.sdk
+   # com.qti.location.sdk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -412,7 +412,7 @@ PRODUCT_PACKAGES += \
     libnl
 
  PRODUCT_BOOT_JARS += \
-    WfdCommon
+   # WfdCommon
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
