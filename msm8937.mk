@@ -17,7 +17,7 @@
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay 
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
@@ -76,8 +76,9 @@ PRODUCT_COPY_FILES += \
 
 # ANT
 PRODUCT_PACKAGES += \
-    AntHalService
-
+    AntHalService \
+    antradio_app \
+    libantradio
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -166,7 +167,6 @@ PRODUCT_PACKAGES += \
 
 # Display calibration
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -311,7 +311,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service.custom
+    android.hardware.power@1.1-service-qti
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -372,7 +372,6 @@ PRODUCT_COPY_FILES += \
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
